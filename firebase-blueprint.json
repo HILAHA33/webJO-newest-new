@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "A saved code project.",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "files": {
+          "type": "object",
+          "description": "A map of filename to content and language."
+        },
+        "activeFile": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "number"
+        },
+        "updatedAt": {
+          "type": "number"
+        }
+      },
+      "required": ["ownerId", "title", "files", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "projects/{projectId}": {
+      "schema": {
+        "$ref": "#/entities/Project"
+      },
+      "description": "User's saved projects"
+    }
+  }
+}

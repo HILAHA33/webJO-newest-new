@@ -1,0 +1,6 @@
+{
+  "name": "webJO",
+  "description": "A browser-based IDE clone with VS Code design, built-in Monaco Editor, Terminal log console, Code Preview, and secure Firebase authentication to persist code projects in real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
